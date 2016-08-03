@@ -1,0 +1,84 @@
+/*/////////////////
+// FONTS
+////////////////*/
+
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+/*font-family: 'Sacramento', cursive;*/
+
+/*//////////////
+// IMAGE OVERFLOW
+//////////////*/
+
+html,body {
+  overflow-x: hidden;
+}
+
+/*//////////////
+// WAVE ANIMATIONS
+//////////////*/
+
+.wave-container {
+  height: 100vh;
+  background-image: url('./great_wave_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.backwave {
+  position: absolute;
+  animation: wavey-back 5s infinite;
+  top: 30px;
+}
+
+.wave-text {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  text-align: center;
+  z-index: 100;
+}
+
+.wave-text h1 {
+  padding: 50px 0px 25px 0px;
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  border: 5px #fff solid;
+}
+
+.backwave img {
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes wavey-back {
+  0% {top: 30px}
+  25% {top: 25px}
+  50% {top: 20px}
+  75% {top: 25px;}
+  100% {top: 30px;}
+}
+
+.frontwave {
+  position: absolute;
+  animation: wavey-front 5s infinite;
+}
+
+@keyframes wavey-front {
+  0% {top: 0px}
+  25% {top: 5px}
+  50% {top: 10px}
+  75% {top: 5px;}
+  100% {top: 0px;}
+}
+
+.frontwave img {
+  height: 100vh;
+  width: 100vw;
+}

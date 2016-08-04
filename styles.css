@@ -35,7 +35,7 @@ html,body {
 .wave-text {
   position: absolute;
   width: 100%;
-  top: 200px;
+  top: 40%;
   text-align: center;
   z-index: 100;
 }
@@ -49,7 +49,7 @@ html,body {
   text-align: center;
   font-size: 100px;
   color: #fff;
-  border: 5px #fff solid;
+  /*border: 5px #fff solid;*/
 }
 
 .backwave img {
@@ -58,11 +58,14 @@ html,body {
 }
 
 @keyframes wavey-back {
-  0% {top: 30px}
+  /*0% {top: 30px}
   25% {top: 25px}
   50% {top: 20px}
   75% {top: 25px;}
-  100% {top: 30px;}
+  100% {top: 30px;}*/
+  0% {top: 30px}
+  50% {top: 20px}
+  100% {top: 30px}
 }
 
 .frontwave {
@@ -71,11 +74,14 @@ html,body {
 }
 
 @keyframes wavey-front {
-  0% {top: 0px}
+  /*0% {top: 0px}
   25% {top: 5px}
   50% {top: 10px}
   75% {top: 5px;}
-  100% {top: 0px;}
+  100% {top: 0px;}*/
+  0% {top: 0px}
+  50% {top: 10px}
+  100% {top: 0px}
 }
 
 .frontwave img {

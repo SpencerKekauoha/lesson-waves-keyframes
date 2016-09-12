@@ -1,6 +1,14 @@
 /*/////////////////
 // FONTS
 ////////////////*/
+@font-face {
+    font-family: 'hensaregular';
+    src: url('Hensa-brush/hensa-webfont.woff2') format('woff2'),
+         url('Hensa-brush/hensa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @import url(https://fonts.googleapis.com/css?family=Sacramento);
 /*font-family: 'Sacramento', cursive;*/
@@ -45,7 +53,7 @@ html,body {
   width: 60%;
   height: 200px;
   margin: 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-family: 'hensaregular', cursive;
   text-align: center;
   font-size: 100px;
   color: #fff;
